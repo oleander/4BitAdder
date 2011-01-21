@@ -12,7 +12,8 @@ entity main is
   ) ;
 end entity ; -- adder
 
-architecturere arch of main is
+
+architecture adder of main is
   signal sum : std_logic_vector(4 downto 0);
   signal i: std_logic_vector(4 downto 0);
 begin
