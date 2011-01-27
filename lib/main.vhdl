@@ -23,6 +23,6 @@ begin
   cut <= '1' when (sum > 9) else '0';
   
   -- Writing to outgoing port - VHDL-style
-  i <= sum when sum <= 9 else (sum + 6);
+  i <= sum when sum < 9 else (sum + 6);
   s <= i(3 downto 0);
 end architecture ; -- arch
